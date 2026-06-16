@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import Sidebar from './Sidebar';
 import NoteList from './NoteList';
-import { Notebook, Note } from '@/lib/types';
+import { Notebook, Note } from '../lib/types';
 
 const Editor = dynamic(() => import('./Editor'), { ssr: false });
 

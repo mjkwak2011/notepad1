@@ -1,6 +1,6 @@
 'use client';
 
-import { Note } from '@/lib/types';
+import { Note } from '../lib/types';
 
 interface Props {
   notes: Note[];

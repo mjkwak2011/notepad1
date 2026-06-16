@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Notebook } from '@/lib/types';
+import { Notebook } from '../lib/types';
 
 interface Props {
   notebooks: Notebook[];

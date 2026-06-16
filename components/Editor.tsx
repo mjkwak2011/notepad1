@@ -5,7 +5,7 @@ import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import Underline from '@tiptap/extension-underline';
 import Placeholder from '@tiptap/extension-placeholder';
-import { Note } from '@/lib/types';
+import { Note } from '../lib/types';
 
 interface Props {
   note: Note | null;

@@ -1,12 +1,8 @@
 import { createClient } from '@libsql/client';
 
-const url = process.env.TURSO_URL!;
-const authToken = process.env.TURSO_TOKEN;
-
 const client = createClient({
-  url,
-  // 로컬 파일 DB는 토큰 불필요
-  ...(authToken ? { authToken } : {}),
+  url: process.env.TURSO_URL!,
+  authToken: process.env.TURSO_TOKEN!,
 });
 
 export async function initializeDatabase() {

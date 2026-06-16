@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: notepad
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: TURSO_URL
+        sync: false
+      - key: TURSO_TOKEN
+        sync: false
+      - key: NODE_ENV
+        value: production
